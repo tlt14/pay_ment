@@ -34,7 +34,7 @@ namespace Pay1193.Services.Implement
             await _context.SaveChangesAsync();
         }
 
-        public IEnumerable<PaymentRecord> GetAll() => _context.PaymentRecords.OrderBy(p => p.EmployeeId).ToList();
+        public IEnumerable<PaymentRecord> GetAll() => _context.PaymentRecords.OrderBy(a => a.EmployeeId).ToList();
 
 
         public IEnumerable<SelectListItem> GetAllTaxYear()
